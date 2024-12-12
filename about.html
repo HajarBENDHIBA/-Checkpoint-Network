@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-blue-500 p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo and Title -->
+        <a href="#" class="flex items-center text-white text-3xl font-bold">
+            <img src="https://weather.armins.co/logo.svg" alt="WeatherApp Logo" class="w-10 h-10 mr-3">
+            WeatherApp
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="space-x-6">
+            <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+            <a href="about.html" class="text-white hover:text-gray-200">About</a>
+            <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- About Section -->
+<section id="about" class="py-10">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-blue-500 mb-6">About WeatherApp</h2>
+        <div class="text-lg text-gray-700">
+            <p class="mb-4">
+                WeatherApp is designed to provide real-time weather information for any city across the globe. Whether you're planning your day or just curious about the weather, our app gives you instant access to accurate data about temperature, humidity, and more.
+            </p>
+            <p class="mb-4">
+                Key Features:
+                <ul class="list-disc pl-6">
+                    <li>Get weather data by entering any city name.</li>
+                    <li>View real-time temperature, humidity, and weather conditions.</li>
+                    <li>Simple and easy-to-use interface.</li>
+                    <li>Access global weather data powered by OpenWeather API.</li>
+                </ul>
+            </p>
+            <p>
+                WeatherApp fetches the latest weather data from the OpenWeather API, ensuring that you always have up-to-date information at your fingertips. Start by entering your city name, and we'll take care of the rest!
+            </p>
+        </div>
+    </div>
+
+     <!-- Add Image Below the Text -->
+     <div class="mt-8 flex justify-center">
+        <img src="https://static.papergeek.fr/2019/07/applications-meteo-mobile.jpg" alt="Weather Illustration" class="rounded-lg shadow-lg w-1/3">
+    </div>
+</div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-500 text-white py-6 mt-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+        <!-- Left Side -->
+        <div>
+            <p class="text-lg font-semibold">WeatherApp &copy; 2024</p>
+        </div>
+
+        <!-- Right Side (Social Links) -->
+        <div class="flex space-x-6 mt-4 sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-200" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i> <!-- Add Font Awesome Facebook icon -->
+            </a>
+            <a href="#" class="text-white hover:text-gray-200" aria-label="Twitter">
+                <i class="fab fa-twitter"></i> <!-- Add Font Awesome Twitter icon -->
+            </a>
+            <a href="#" class="text-white hover:text-gray-200" aria-label="Instagram">
+                <i class="fab fa-instagram"></i> <!-- Add Font Awesome Instagram icon -->
+            </a>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+   <!-- Navbar -->
+<nav class="bg-blue-500 p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo and Title -->
+        <a href="#" class="flex items-center text-white text-3xl font-bold">
+            <img src="https://weather.armins.co/logo.svg" alt="WeatherApp Logo" class="w-10 h-10 mr-3">
+            WeatherApp
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="space-x-6">
+            <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+            <a href="about.html" class="text-white hover:text-gray-200">About</a>
+            <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+<section id="home" class="bg-blue-500 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center">
+        <!-- Text Content -->
+        <div class="text-center sm:text-left sm:w-1/2">
+            <h2 class="text-4xl font-bold mb-4">Welcome to WeatherApp</h2>
+            <p class="text-xl mb-6">Get real-time weather updates for any city, anytime, anywhere. Stay informed and plan your day with ease.</p>
+            <button class="bg-white text-blue-500 font-semibold px-8 py-3 rounded-md hover:bg-gray-200 transition duration-300" onclick="document.getElementById('city').focus()">Search for Weather</button>
+        </div>
+
+        <!-- Weather Image -->
+        <div class="sm:w-1/2 mt-8 sm:mt-0 text-center">
+            <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/830977-jeu-d-icones-meteo-gratuit-vectoriel.jpg" alt="Weather Icon" class="w-full max-w-sm mx-auto rounded-lg shadow-lg">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center text-blue-500 mb-10">Key Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-blue-500 mb-4">Real-time Weather</h3>
+                    <p>Get the latest weather information, including temperature, humidity, and more.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-blue-500 mb-4">Global Data</h3>
+                    <p>WeatherApp provides accurate data for any city across the globe.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-blue-500 mb-4">Simple Interface</h3>
+                    <p>WeatherApp is designed with ease of use in mind, allowing you to check the weather quickly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg max-w-lg ">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Weather App</h1>
+        <input type="text" id="city" class="w-full p-3 border border-gray-300 rounded-md mb-4" placeholder="Enter city name">
+        <button id="getWeather" class="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-700">Get Weather</button>
+        <div id="weatherInfo" class="mt-6">
+            <!-- Weather info will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="bg-blue-500 text-white py-6 mt-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+        <!-- Left Side -->
+        <div>
+            <p class="text-lg font-semibold">WeatherApp &copy; 2024</p>
+        </div>
+
+        <!-- Right Side (Social Links) -->
+        <div class="flex space-x-6 mt-4 sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-200" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i> <!-- Add Font Awesome Facebook icon -->
+            </a>
+            <a href="#" class="text-white hover:text-gray-200" aria-label="Twitter">
+                <i class="fab fa-twitter"></i> <!-- Add Font Awesome Twitter icon -->
+            </a>
+            <a href="#" class="text-white hover:text-gray-200" aria-label="Instagram">
+                <i class="fab fa-instagram"></i> <!-- Add Font Awesome Instagram icon -->
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
